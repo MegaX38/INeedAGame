@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reportes y soporte | INeedAGame</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <a class="logo" href="index.html">INeedAGame</a>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="index.html#juegos">Videojuegos</a>
+    <a href="index.html#comunidad">Comunidad</a>
+    <a href="reportes.html">Reportes y soporte</a>
+  </nav>
+  <div class="auth">
+    <a class="btn secondary" href="acceso.html#login">Iniciar sesión</a>
+    <a class="btn primary" href="acceso.html#registro">Registrarse</a>
+  </div>
+</header>
+<main>
+  <section class="hero reports-hero">
+    <div>
+      <span class="tag">CENTRO DE AYUDA</span>
+      <h1>Reportes y soporte</h1>
+      <p>Ayúdanos a mantener INeedAGame como un espacio seguro. Envía reportes de contenido, sugerencias o problemas técnicos.</p>
+    </div>
+    <div class="hero-card">
+      <span class="tag">COMUNIDAD SEGURA</span>
+      <h2>Tu opinión importa.</h2>
+      <p>Las solicitudes podrán ser revisadas por el equipo de moderación cuando se implemente el sistema.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="two-columns">
+      <div>
+        <span class="tag">CONTACTO</span>
+        <h2>¿Necesitas ayuda?</h2>
+        <p>Selecciona el tipo de solicitud y describe lo sucedido con la mayor claridad posible.</p>
+        <div class="panel report-info">
+          <h3>Tipos de solicitud</h3>
+          <p><b>Reporte de contenido:</b> comentarios, imágenes, videos o mods inapropiados.</p>
+          <p><b>Sugerencia:</b> ideas para mejorar la página.</p>
+          <p><b>Problema técnico:</b> errores de navegación o visualización.</p>
+        </div>
+      </div>
+      <form class="panel form" action="#solicitud" method="get" id="solicitud">
+        <h2>Enviar solicitud</h2>
+        <label>Tipo de solicitud
+          <select name="tipo" required>
+            <option value="">Selecciona una opción</option>
+            <option>Reporte de contenido</option>
+            <option>Sugerencia</option>
+            <option>Problema técnico</option>
+            <option>Consulta general</option>
+          </select>
+        </label>
+        <label>Correo de contacto (opcional)<input type="email" name="correo" placeholder="nombre@correo.com"></label>
+        <label>Videojuego o contenido relacionado (opcional)<input type="text" name="contenido" placeholder="Nombre del juego o contenido"></label>
+        <label>Descripción<textarea name="mensaje" rows="6" placeholder="Describe tu solicitud..." required></textarea></label>
+        <button class="btn primary" type="submit">Enviar solicitud</button>
+        <small class="form-note">Prototipo visual: el formulario aún no envía ni almacena reportes.</small>
+      </form>
+    </div>
+  </section>
+</main>
+<footer><b>INeedAGame</b></footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acceso | INeedAGame</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <a class="logo" href="index.html">INeedAGame</a>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="index.html#juegos">Videojuegos</a>
+    <a href="index.html#comunidad">Comunidad</a>
+    <a href="reportes.html">Reportes y soporte</a>
+  </nav>
+  <div class="auth">
+    <a class="btn secondary" href="acceso.html#login">Iniciar sesión</a>
+    <a class="btn primary" href="acceso.html#registro">Registrarse</a>
+  </div>
+</header>
+<main class="auth-page">
+  <section id="login" class="section">
+    <div class="panel auth-panel">
+      <span class="tag">ACCESO</span>
+      <h2>Iniciar sesión</h2>
+      <p>Ingresa a tu cuenta para participar en la comunidad.</p>
+      <form class="form" action="#login" method="get">
+        <label>Correo electrónico<input type="email" name="correo_login" placeholder="nombre@correo.com" required></label>
+        <label>Contraseña<input type="password" name="contrasena_login" placeholder="Tu contraseña" required></label>
+        <button class="btn primary" type="submit">Ingresar</button>
+      </form>
+      <p class="switch-auth">¿No tienes cuenta? <a href="#registro">Crear cuenta</a></p>
+      <small class="form-note">Prototipo visual: el inicio de sesión aún no está conectado a un servidor.</small>
+    </div>
+  </section>
+  <section id="registro" class="section alternate auth-alternate">
+    <div class="panel auth-panel">
+      <span class="tag">ÚNETE A LA COMUNIDAD</span>
+      <h2>Crear cuenta</h2>
+      <p>Regístrate para comentar, calificar y compartir contenido.</p>
+      <form class="form" action="#registro" method="get">
+        <label>Nombre de usuario<input type="text" name="usuario" placeholder="Tu nombre de usuario" required></label>
+        <label>Correo electrónico<input type="email" name="correo_registro" placeholder="nombre@correo.com" required></label>
+        <label>Contraseña<input type="password" name="contrasena_registro" placeholder="Crea una contraseña" minlength="8" required></label>
+        <button class="btn primary" type="submit">Registrarme</button>
+      </form>
+      <p class="switch-auth">¿Ya tienes cuenta? <a href="#login">Iniciar sesión</a></p>
+      <small class="form-note">Prototipo visual: los datos no se guardan todavía.</small>
+    </div>
+  </section>
+</main>
+<footer><b>INeedAGame</b></footer>
+</body>
+</html>
